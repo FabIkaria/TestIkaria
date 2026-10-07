@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fabulous Place Ikaria</title>
+    <meta name="description" content="Στοιχεία εταιρίας και εταίρων της Fabulous Place Ikaria ΙΚΕ">
+
+    <!-- Social meta tags -->
+    <meta property="og:locale" content="el_GR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fabulous Place Ikaria">
+    <meta property="og:description" content="Στοιχεία εταιρίας και εταίρων της Fabulous Place Ikaria ΙΚΕ">
+    <meta property="og:site_name" content="Fabulous Place Ikaria">
+
+    <!-- Modern, highly readable font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c2d17406e6.js"
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9NaoYz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --brand-blue: #0056b3;
+            --brand-blue-dark: #003f84;
+            --brand-blue-light: #eaf3ff;
+            --page-background: #f6f8fb;
+            --card-background: #ffffff;
+            --text-color: #212529;
+            --muted-text: #495057;
+            --border-color: #d9e1ea;
+            --footer-background: #17212b;
+            --shadow: 0 4px 18px rgba(20, 45, 75, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.65;
+            color: var(--text-color);
+            background: var(--page-background);
+        }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            left: 0.75rem;
+            top: -100px;
+            z-index: 2000;
+            padding: 0.75rem 1rem;
+            background: #ffffff;
+            color: #000000;
+            border: 3px solid #000000;
+            border-radius: 0.4rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0.75rem;
+        }
+
+        /* Navigation */
+        .main-navbar {
+            background: var(--brand-blue) !important;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .navbar .container-fluid {
+            max-width: 1180px;
+            padding: 0.65rem 20px;
+        }
+
+        .navbar-brand {
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .navbar-dark .navbar-nav .nav-link,
+        .navbar-dark .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            margin-left: 0.25rem;
+            padding: 0.55rem 0.8rem;
+            border-radius: 0.45rem;
+            font-weight: 500;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover,
+        .navbar-dark .navbar-nav .nav-link:focus {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.13);
+            text-decoration: none;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.16);
+            font-weight: 700;
+        }
+
+        /* Main layout */
+        main {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 42px 20px;
+            scroll-margin-top: 1rem;
+        }
+
+        /* Hero */
+        #title {
+            padding-top: 58px;
+            padding-bottom: 42px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f6ff 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 48px 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero h1 {
+            margin-bottom: 0.65rem;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.04em;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            max-width: 680px;
+            margin: 0 auto;
+            color: var(--muted-text);
+            font-size: 1.05rem;
+        }
+
+        /* Section headings */
+        .section-heading {
+            margin-bottom: 1.8rem;
+        }
+
+        .section-heading h2 {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin: 0;
+            font-size: clamp(1.45rem, 3vw, 1.9rem);
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .section-heading i {
+            color: var(--brand-blue);
+        }
+
+        /* Cards */
+        .info-card {
+            height: 100%;
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 25px 27px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-card:hover {
+            box-shadow: 0 7px 24px rgba(20, 45, 75, 0.11);
+        }
+
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            display: inline;
+            font-weight: 700;
+            color: #263746;
+        }
+
+        dd {
+            display: inline;
+            margin-left: 0.35rem;
+        }
+
+        dd::after {
+            content: "";
+            display: block;
+            margin-bottom: 0.65rem;
+        }
+
+        /* Links */
+        a {
+            color: var(--brand-blue);
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--brand-blue-dark);
+        }
+
+        .info-card a {
+            font-weight: 500;
+        }
+
+        /* Focus indicator */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #000000;
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
+        /* Divider */
+        hr {
+            max-width: 1130px;
+            margin: 0 auto;
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            opacity: 1;
+        }
+
+        /* Partner cards */
+        .partner-name {
+            margin-bottom: 1.2rem;
+            color: var(--brand-blue);
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            margin-top: 18px;
+            background: var(--footer-background);
+        }
+
+        footer a {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        footer a:hover,
+        footer a:focus {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 18px 20px;
+        }
+
+        /* EU / ESPA */
+        .funding-area {
+            background: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 24px 20px 30px;
+        }
+
+        .funding-logo {
+            display: block;
+            width: 50%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* Screen-reader-only */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 15px;
+            }
+
+            #title {
+                padding-top: 30px;
+                padding-bottom: 25px;
+            }
+
+            .hero {
+                padding: 35px 20px;
+                border-radius: 14px;
+            }
+
+            .navbar .container-fluid {
+                padding: 5px 15px;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                margin-left: 0;
+                margin-top: 0.15rem;
+            }
+
+            .info-card {
+                padding: 22px 20px;
+            }
+
+            .funding-logo {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .funding-logo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Μετάβαση στο κύριο περιεχόμενο
+    </a>
+
+    <div class="main-page-wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark main-navbar"
+             aria-label="Κύρια πλοήγηση">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#main-content">
+                    Fabulous Place Ikaria
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Άνοιγμα μενού πλοήγησης">
+
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="#main-content">
+                                <i class="fa-solid fa-house" aria-hidden="true"></i>
+                                Αρχική
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#etairia">
+                                <i class="fa-solid fa-building" aria-hidden="true"></i>
+                                Στοιχεία εταιρίας
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#etairoi">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                Στοιχεία εταίρων
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main id="main-content" tabindex="-1">
+
+            <!-- Hero -->
+            <section id="title" aria-labelledby="page-title">
+
+                <div class="hero text-center">
+
+                    <h1 id="page-title">
+                        Fabulous Place Ikaria
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Στοιχεία εταιρίας και εταίρων
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Company information -->
+            <section id="etairia" aria-labelledby="etairia-title">
+
+                <div class="section-heading text-center">
+                    <h2 id="etairia-title">
+                        <i class="fa-solid fa-building" aria-hidden="true"></i>
+                        Στοιχεία εταιρίας
+                    </h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-6">
+                        <div class="info-card">
+
+                            <dl>
+                                <dt>ΕΠΩΝΥΜΙΑ:</dt>
+                                <dd>Fabulous Place Ikaria ΙΚΕ</dd>
+
+                                <dt>ΔΙΑΚΡΙΤΙΚΟΣ ΤΙΤΛΟΣ:</dt>
+                                <dd>Fabulous Place Ikaria</dd>
+
+                                <dt>ΑΦΜ:</dt>
+                                <dd>802459494</dd>
+
+                                <dt>ΔΟΥ:</dt>
+                                <dd>ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ</dd>
+
+                                <dt>ΑΡ. ΓΕΜΗ:</dt>
+                                <dd>176757603000</dd>
+
+                                <dt>ΗΜΕΡΟΜΗΝΙΑ ΛΗΞΗΣ 1ΗΣ ΧΡΗΣΗΣ:</dt>
+                                <dd>2060-01-01</dd>
+
+                                <dt>ΚΕΦΑΛΑΙΟ:</dt>
+                                <dd>50000 €</dd>
+
+                                <dt>ΔΙΑΧΕΙΡΙΣΤΗΣ:</dt>
+                                <dd>Δ. Κλωνής</dd>
+
+                                <dt>ΑΦΜ ΔΙΑΧΕΙΡΙΣΤΗ:</dt>
+                                <dd>034619529</dd>
+                            </dl>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="info-card">
+
+                            <dl>
+                                <dt>ΔΙΕΥΘΥΝΣΗ:</dt>
+                                <dd>Καρνεάδου 43</dd>
+
+                                <dt>Τ.Κ.:</dt>
+                                <dd>10676</dd>
+
+                                <dt>ΠΕΡΙΟΧΗ:</dt>
+                                <dd>Αθήνα</dd>
+
+                                <dt>ΤΗΛ:</dt>
+                                <dd>
+                                    <a href="tel:+306946508914">6946508914</a>
+                                </dd>
+
+                                <dt>FAX:</dt>
+                                <dd>Δεν έχει καταχωρηθεί</dd>
+
+                                <dt>EMAIL:</dt>
+                                <dd>
+                                    <a href="mailto:lloukia@gmail.com">
+                                        lloukia@gmail.com
+                                    </a>
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Partners -->
+            <section id="etairoi" aria-labelledby="etairoi-title">
+
+                <div class="section-heading text-center">
+                    <h2 id="etairoi-title">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        Στοιχεία εταίρων
+                    </h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Partner 1 -->
+                    <div class="col-lg-6">
+                        <div class="info-card">
+
+                            <div class="partner-name">
+                                Λουκία Λουκοπούλου
+                            </div>
+
+                            <dl>
+                                <dt>ΟΝΟΜΑ:</dt>
+                                <dd>Λουκία Λουκοπούλου</dd>
+
+                                <dt>ΔΙΕΥΘΥΝΣΗ:</dt>
+                                <dd>Randweg 9</dd>
+
+                                <dt>Τ.Κ.:</dt>
+                                <dd>3013</dd>
+
+                                <dt>ΠΕΡΙΟΧΗ:</dt>
+                                <dd>Bern</dd>
+
+                                <dt>ΠΟΣΟΣΤΟ ΣΥΜΜΕΤΟΧΗΣ:</dt>
+                                <dd>50 %</dd>
+
+                                <dt>ΚΑΤΗΓΟΡΙΑ ΕΙΣΦΟΡΩΝ:</dt>
+                                <dd>Απλή</dd>
+                            </dl>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Partner 2 -->
+                    <div class="col-lg-6">
+                        <div class="info-card">
+
+                            <div class="partner-name">
+                                Fabian Ilg
+                            </div>
+
+                            <dl>
+                                <dt>ΟΝΟΜΑ:</dt>
+                                <dd>Fabian Ilg</dd>
+
+                                <dt>ΔΙΕΥΘΥΝΣΗ:</dt>
+                                <dd>Randweg 9</dd>
+
+                                <dt>Τ.Κ.:</dt>
+                                <dd>3013</dd>
+
+                                <dt>ΠΕΡΙΟΧΗ:</dt>
+                                <dd>Bern</dd>
+
+                                <dt>ΠΟΣΟΣΤΟ ΣΥΜΜΕΤΟΧΗΣ:</dt>
+                                <dd>50 %</dd>
+
+                                <dt>ΚΑΤΗΓΟΡΙΑ ΕΙΣΦΟΡΩΝ:</dt>
+                                <dd>Απλή</dd>
+                            </dl>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-light">
+
+      
+
+    </footer>
+
+
+    <!-- EU / ESPA funding -->
+    <div class="funding-area text-center">
+
+        <a href="https://21-27.antagonistikotita.gr"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <img src="antagonistikotitaframeEL.jpg"
+                 class="funding-logo"
+                 alt="Με τη συγχρηματοδότηση της Ευρωπαϊκής Ένωσης - Πρόγραμμα Ανταγωνιστικότητα ΕΣΠΑ 2021-2027">
+
+            <span class="visually-hidden">
+                Σύνδεσμος προς το Πρόγραμμα Ανταγωνιστικότητα ΕΣΠΑ 2021-2027
+                (ανοίγει σε νέα καρτέλα)
+            </span>
+
+        </a>
+
+    </div>
+
+</body>
+</html>
